@@ -1,0 +1,40 @@
+.buy-sell-box{
+    width: 30vw;
+    height: 5vh;
+    top: 12vh;
+    left: 25vw;
+    color: aliceblue;
+    font-size: 2vw;
+    background-color:#131d4b;
+    position: fixed;
+    z-index: -2;
+    border: 0.2vw solid #010415;
+    border-radius: 2vh;
+    display: flex;
+    gap: 0.3vw;
+}
+.buy-sell-box button{
+    width: 50%;
+    height: 100%;
+    border: 0;
+    cursor: pointer;
+    color: aliceblue; 
+    position: relative;
+    font-size: 1vw;
+    background-color: transparent;
+    border-radius: 2vh;
+  
+}
+#SwitchBuy{
+    border: 0.2vw solid aquamarine;
+}
+.buy-page{
+    position: fixed;
+    width: 70vw;
+    height: 75vh;
+    background-color: #131d4b;
+    top: 20vh;
+    left: 8vw;
+    border-radius: 2vh;
+    border: 0.3vh solid aquamarine;
+}

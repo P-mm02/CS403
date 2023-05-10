@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeeDeX</title>
+    <link rel="stylesheet" href="mainStyle.css">
+    <script src="https://kit.fontawesome.com/b5f98614f0.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="homeStyle.css">
+    
+</head>
+<body>
+    <div class="logo"></div>
+    <div class="sidebar">        
+        <ul>
+            <li class="tab is-active"><a data-switcher data-tab="1">
+                <i class="fa-solid fa-house-chimney" ></i>
+                <span>Home</span>
+            </a></li>
+            <li class="tab"><a data-switcher data-tab="2">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Buy&Sell</span>
+            </a></li>
+            <li class="tab"><a data-switcher data-tab="3">
+                <i class="fa-regular fa-clock"></i>
+                <span>History</span>
+            </a></li>
+            <li class="tab"><a data-switcher data-tab="4">
+                <i class="fa-regular fa-circle-check"></i>
+                <span>Verify</span>
+            </a></li>
+            <li class="tab"><a data-switcher data-tab="5">
+                <i class="fa-solid fa-people-roof"></i>
+                <span>Assign</span>
+            </a></li>
+        </ul>
+    </div>
+    
+    <div class="container-head">
+        <form action="" class="search-bar">
+            <input type="text" placeholder="Search anything" name="q">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <button type="button" class="noti-button">
+            <i class="fa-solid fa-bell"></i>
+            <span class="noti-button-badge">3</span>
+        </button>
+        <button type="button" class="connect-button">
+            <span class="connect-text">Connect Wallet</span>
+        </button>
+    </div>
+    <div class="profile-container">
+        <ul>        
+            <li><img class="profile-image">
+                <strong>My Profile</strong>
+            </li>        
+            <li><span class="profile-info">Poomtawee Rompho</span>
+                <div class="stat-info">
+                    <div class="container">
+                        <span class="num" data-val-stat="500">0</span>
+                        <span class="text">Asset</span>
+                    </div>
+                    <div class="container">
+                        <span class="num" data-val-stat="400">0</span>
+                        <span class="text">Sold</span>
+                    </div>
+                    <div class="container">
+                        <span class="num" data-val-stat="300">0</span>
+                        <span class="text">Bought</span>
+                    </div>
+                    <div class="container">
+                        <span class="num" data-val-stat="200">0</span>
+                        <span class="text">Followers</span>
+                    </div>
+                    <div class="container">
+                        <span class="num" data-val-stat="100">0</span>
+                        <span class="text">Following</span>
+                    </div>
+                </div>
+            </li>
+            <li><div class="balance">
+                <span class="text">Your Balance</span>
+                
+                <div class="container-num"><br>
+                    <img src="/image/eth-icon01.png" alt="">
+                    <span class="num" data-val-stat="987.65">0.00</span>
+                    <span class="text">ETH</span>
+                </div>
+            </div>
+            </li>
+            <li>
+                <div class="verify-box">                
+                    <div class="button-box">
+                        <div id="btn"></div> 
+                        <button type="button" class="toggle-verify" onclick="VerifyOn()">On</button>
+                        <button type="button" class="toggle-verify" onclick="VerifyOff()">Off</button>   
+                    </div>
+                    <span class="text">Show Verification</span> 
+                </div>
+            </li>
+        </ul>
+        <script src="script-profile-container.js"></script>
+    </div>
+
+    <div class="page is-active" data-page="1">
+        <section aria-label="events">
+            <div class="carousel" data-carousel>
+                <button class="carousel-button prev" data-carousel-button="prev">&#171;</button>
+                <button class="carousel-button next" data-carousel-button="next">&#187;</button>
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <img src="/image/slide/slide01.jpg" alt="#1">
+                    </li>
+                    <li class="slide">
+                        <img src="/image/slide/slide02.jpg" alt="#2">
+                    </li>
+                    <li class="slide">
+                        <img src="/image/slide/slide03.jpg_large" alt="#3">
+                    </li>
+                    <li class="slide">
+                        <img src="/image/slide/slide04.avif" alt="#4">
+                    </li>
+                </ul>            
+            </div>
+            <script src="events.js" defer></script> 
+        </section>
+        <section aria-label="show-spon">
+            <div class="show-box" data-carousel>                        
+                    <div class="item-box">
+                        <img src="/image/showBox/showBox01.webp" alt="#1">
+                        <div class="info-box">
+                            <span class="date">xxxxxxxxxxx <br> (Registeration Time)</span>
+                            <span class="price">999 ETH <br> (Price)</span>
+                            <button class="buy">Buy</button>
+                        </div>
+                    </div>
+                    <div class="item-box">
+                        <img src="/image/showBox/showBox02.webp" alt="#2">
+                        <div class="info-box">
+                            <span class="date">xxxxxxxxxxx <br> (Registeration Time)</span>
+                            <span class="price">999 ETH <br> (Price)</span>
+                            <button class="buy">Buy</button>
+                        </div>
+                    </div> 
+                <button class="showmore" >Show more &#187;</button>            
+            </div>
+            <script src="events.js" defer></script> 
+        </section>
+    </div>
+
+    <div class="page" data-page="2">
+        <link rel="stylesheet" href="buy-sellStyle.css">
+        <div class="buy-sell-box">
+            <button id="SwitchBuy" onclick="BuyPage()">Buy</button>
+            <button id="SwitchSell" onclick="SellPage()">Sell</button>
+        </div>
+        <div class="buy-page">
+        </div>
+        <div class="sell-page">
+        </div>        
+        <script src="buy-sellScript.js"></script>        
+    </div>
+
+    <div class="page" data-page="3">
+        <link rel="stylesheet" href="buy-sellStyle.css">
+        <div class="buy-sell-button">
+            <button class="buy"></div>
+            <button class="sell"></div>
+        </div>
+        <div class="Buy-Sell-Page">
+        </div>        
+    </div>
+
+    <div class="page" data-page="4">
+        <link rel="stylesheet" href="buy-sellStyle.css">
+        <div class="buy-sell-button">
+            <button class="buy"></div>
+            <button class="sell"></div>
+        </div>
+        <div class="Buy-Sell-Page">
+        </div>        
+    </div>
+
+    <div class="page" data-page="5">
+        <link rel="stylesheet" href="buy-sellStyle.css">
+        <div class="buy-sell-button">
+            <button class="buy"></div>
+            <button class="sell"></div>
+        </div>
+        <div class="Buy-Sell-Page">
+        </div>        
+    </div>
+
+    <script src="switch-page.js"></script>
+</body>
+</html>
