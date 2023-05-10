@@ -1,0 +1,22 @@
+.box button{
+    width: 50%;
+    height: 100%;
+    border: 0;
+    cursor: pointer;
+    color: aliceblue; 
+    position: relative;
+    font-size: 1vw;
+    background-color: transparent;
+    border-radius: 2vh;
+  
+}
+.box{
+    position: fixed;
+    width: 70vw;
+    height: 85vh;
+    background-color: #131d4b;
+    top: 12vh;
+    left: 8vw;
+    border-radius: 2vh;
+    border: 0.3vh solid aquamarine;
+}
