@@ -37,3 +37,7 @@ table td,th{
     initial-letter-align: 1vw;
     padding-left: 1vw;
 }
+.Txn-link:hover{
+    cursor: pointer;
+    color: blue;
+}
