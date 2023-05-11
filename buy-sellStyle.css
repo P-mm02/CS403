@@ -37,4 +37,56 @@
     left: 8vw;
     border-radius: 2vh;
     border: 0.3vh solid aquamarine;
+    visibility: visible;
+    display: flex;
+    justify-content: space-around;
 }
+.sell-page{
+    position: fixed;
+    width: 70vw;
+    height: 75vh;
+    background-color: #4b2813;
+    top: 20vh;
+    left: 8vw;
+    border-radius: 2vh;
+    border: 0.3vh solid aquamarine;
+    visibility: hidden;
+}
+.buy-page table{
+    top: 5vh;    
+}
+.buy-page table tr td img{
+    width: 16vw;
+    height: 9vw;
+    display: block;
+    margin-left: -1vw;
+    margin-right: 0;
+}
+.buy-page table tr td{
+    width: 16vw;
+    height: 9vw;
+}
+.buy-page table tr td :hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.box-tab{
+    position:fixed;
+    color: aliceblue;
+    top: 88vh;
+    right: 25vw;
+    
+    
+}
+.box-tab span{
+    font-size: 1.2vw;
+    border: 0.2vw solid aqua;
+    padding: 0.3vw 0.7vw;
+    border-radius: 0.2vw;
+}
+.box-tab span:hover{
+    cursor: pointer;
+    background-color: #070d31;
+}
+ 
+
