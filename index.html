@@ -48,7 +48,7 @@
             <span class="noti-button-badge">3</span>
         </button>
         <button type="button" class="connect-button">
-            <span class="connect-text">Connect Wallet</span>
+            <span class="connect-text">0xdF321cAF1f224C353243719a552417CF9ECCF0F9</span>
         </button>
     </div>
     <div class="profile-container">
@@ -133,7 +133,7 @@
                         <div class="info-box">
                             <span class="date">xxxxxxxxxxx <br> (Registeration Time)</span>
                             <span class="price">999 ETH <br> (Price)</span>
-                            <button class="buy">Buy</button>
+                            <button class="buy" onclick="BuyWindow2()">Buy</button>
                         </div>
                     </div>
                     <div class="item-box">
@@ -141,13 +141,29 @@
                         <div class="info-box">
                             <span class="date">xxxxxxxxxxx <br> (Registeration Time)</span>
                             <span class="price">999 ETH <br> (Price)</span>
-                            <button class="buy">Buy</button>
+                            <button class="buy" onclick="BuyWindow2()">Buy</button>
                         </div>
                     </div> 
                 <button class="showmore" >Show more &#187;</button>            
             </div>
-            <script src="events.js" defer></script> 
+            
+            <script src="events.js" defer></script>
+             
         </section>
+        <div class="buy-window" id="OpenBuyWindow2">
+            <div class="buy-window-img">
+                <img src="/image/item list test/01.webp" alt="">
+                <img src="/image/item list test/01.webp" alt="">
+            </div>
+            <span>Registeration Time <br>02/05/2023 23.49</span>
+            <span>Name: <br> Poomtawee</span>
+            <span>Game: <br> Axie</span>
+            <span>Price: <br>5.24 ETH</span>
+            <span>Address: <br>0xdF321cAF1f224C353243719a552417CF9ECCF0F9</span>
+            <button>Buy</button>
+            <button onclick="CloseBuyWindow2()">Close</button>
+            <script src="buyScript.js" defer></script>
+        </div>
     </div>
 
     <div class="page" data-page="2">
@@ -160,47 +176,47 @@
             <table>
                 <tr>
                     <td>
-                        <img src="/image/buy list test/01.webp" alt="">
+                        <img src="/image/buy list test/01.webp" alt="" onclick="BuyWindow()">
                     </td>
                     <td>
-                        <img src="/image/buy list test/02.webp" alt="">
+                        <img src="/image/buy list test/02.webp" alt="" onclick="BuyWindow()">
                     </td>
                     <td>
-                        <img src="/image/buy list test/11.jpg" alt="">
+                        <img src="/image/buy list test/11.jpg" alt="" onclick="BuyWindow()">
                     </td>
                     <td>
-                        <img src="/image/buy list test/03.jpg" alt="">
+                        <img src="/image/buy list test/03.jpg" alt="" onclick="BuyWindow()">
                     </td>                    
                 </tr>
                 <tr>
                     <td>
-                        <img src="/image/buy list test/04.webp" alt="">
+                        <img src="/image/buy list test/04.webp" alt="" onclick="BuyWindow()">
                     </td>
                     <td>
-                        <img src="/image/buy list test/05.jpg" alt="">
+                        <img src="/image/buy list test/05.jpg" alt="" onclick="BuyWindow()">
                     </td>
                     <td>
-                        <img src="/image/buy list test/06.jpg" alt="">
+                        <img src="/image/buy list test/06.jpg" alt="" onclick="BuyWindow()">
                     </td> 
                     <td>
-                        <img src="/image/buy list test/07.jpg" alt="">
+                        <img src="/image/buy list test/07.jpg" alt="" onclick="BuyWindow()">
                     </td>                   
                 </tr>
                 <tr>
                     <td>
-                        <img src="/image/buy list test/08.jpg" alt="">
+                        <img src="/image/buy list test/08.jpg" alt="" onclick="BuyWindow()">
                     </td>
                     <td>
-                        <img src="/image/buy list test/09.jpg" alt="">
+                        <img src="/image/buy list test/09.jpg" alt="" onclick="BuyWindow()">
                     </td>
                     <td>
-                        <img src="/image/buy list test/10.png" alt="">
+                        <img src="/image/buy list test/10.png" alt="" onclick="BuyWindow()">
                     </td> 
                     <td>
-                        <img src="/image/buy list test/12.webp" alt="">
+                        <img src="/image/buy list test/12.webp" alt="" onclick="BuyWindow()">
                     </td>                   
                 </tr>
-            </table>            
+            </table>                    
             <div class="box-tab">
                 <span>1</span>
                 <span>2</span>
@@ -209,6 +225,20 @@
                 <span>5</span>
                 <span>...</span>
             </div>
+            <div class="buy-window" id="OpenBuyWindow">
+                <div class="buy-window-img">
+                    <img src="/image/item list test/01.webp" alt="">
+                    <img src="/image/item list test/01.webp" alt="">
+                </div>
+                <span>Registeration Time <br>02/05/2023 23.49</span>
+                <span>Name: <br> Poomtawee</span>
+                <span>Game: <br> Axie</span>
+                <span>Price: <br>5.24 ETH</span>
+                <span>Address: <br>0xdF321cAF1f224C353243719a552417CF9ECCF0F9</span>
+                <button>Buy</button>
+                <button onclick="CloseBuyWindow()">Close</button>
+            
+            </div>        
         </div>
         <div class="sell-page" id="SwitchSellPage">
             <div class="contain-image"> 
@@ -252,7 +282,7 @@
             <button class="submit-sell">Submit</button>
         </div>
                         
-                
+        <script src="buyScript.js"></script>           
         <script src="buy-sellScript.js"></script>        
     </div>
 
@@ -269,73 +299,73 @@
                 </tr>
                 <tr>
                   <td class="Txn-link">0xb2f6eb28270f23cf4a3...</td>
-                  <td>xxx</td>
-                  <td>xxx</td>
-                  <td>xxx</td>
-                  <td>xxx</td>
+                  <td>2.67 ETH</td>
+                  <td>08/05/2023 23:41</td>
+                  <td>0x77F444f13D1f77ed491C12a8217b2A56fBDcAc1C</td>
+                  <td>0xf3d3dBbF9494bd13239b56CaAcFA0354f23cA6c9</td>
                 </tr>
                 <tr>
                   <td class="Txn-link">0xb2f6eb28270f23cf4a3...</td>
-                  <td>xxx</td>
-                  <td>xxx</td>
-                  <td>xxx</td>
-                  <td>xxx</td>
+                  <td>2.67 ETH</td>
+                  <td>08/05/2023 23:41</td>
+                  <td>0x77F444f13D1f77ed491C12a8217b2A56fBDcAc1C</td>
+                  <td>0xf3d3dBbF9494bd13239b56CaAcFA0354f23cA6c9</td>
                 </tr>
                 <tr>
                     <td class="Txn-link">0xb2f6eb28270f23cf4a3...</td>
-                    <td>xxx</td>
-                    <td>xxx</td>
-                    <td>xxx</td>
-                    <td>xxx</td>
+                    <td>2.67 ETH</td>
+                    <td>08/05/2023 23:41</td>
+                    <td>0x77F444f13D1f77ed491C12a8217b2A56fBDcAc1C</td>
+                    <td>0xf3d3dBbF9494bd13239b56CaAcFA0354f23cA6c9</td>
                   </tr>
                   <tr>
                     <td class="Txn-link">0xb2f6eb28270f23cf4a3...</td>
-                    <td>xxx</td>
-                    <td>xxx</td>
-                    <td>xxx</td>
-                    <td>xxx</td>
+                    <td>2.67 ETH</td>
+                    <td>08/05/2023 23:41</td>
+                    <td>0x77F444f13D1f77ed491C12a8217b2A56fBDcAc1C</td>
+                    <td>0xf3d3dBbF9494bd13239b56CaAcFA0354f23cA6c9</td>
                   </tr>
                   <tr>
                     <td class="Txn-link">0xb2f6eb28270f23cf4a3...</td>
-                    <td>xxx</td>
-                    <td>xxx</td>
-                    <td>xxx</td>
-                    <td>xxx</td>
+                    <td>2.67 ETH</td>
+                    <td>08/05/2023 23:41</td>
+                    <td>0x77F444f13D1f77ed491C12a8217b2A56fBDcAc1C</td>
+                    <td>0xf3d3dBbF9494bd13239b56CaAcFA0354f23cA6c9</td>
                   </tr>
                   <tr>
                     <td class="Txn-link">0xb2f6eb28270f23cf4a3...</td>
-                    <td>xxx</td>
-                    <td>xxx</td>
-                    <td>xxx</td>
-                    <td>xxx</td>
+                    <td>2.67 ETH</td>
+                    <td>08/05/2023 23:41</td>
+                    <td>0x77F444f13D1f77ed491C12a8217b2A56fBDcAc1C</td>
+                    <td>0xf3d3dBbF9494bd13239b56CaAcFA0354f23cA6c9</td>
                   </tr>
                   <tr>
                     <td class="Txn-link">0xb2f6eb28270f23cf4a3...</td>
-                    <td>xxx</td>
-                    <td>xxx</td>
-                    <td>xxx</td>
-                    <td>xxx</td>
+                    <td>2.67 ETH</td>
+                    <td>08/05/2023 23:41</td>
+                    <td>0x77F444f13D1f77ed491C12a8217b2A56fBDcAc1C</td>
+                    <td>0xf3d3dBbF9494bd13239b56CaAcFA0354f23cA6c9</td>
                   </tr>
                   <tr>
                     <td class="Txn-link">0xb2f6eb28270f23cf4a3...</td>
-                    <td>xxx</td>
-                    <td>xxx</td>
-                    <td>xxx</td>
-                    <td>xxx</td>
+                    <td>2.67 ETH</td>
+                    <td>08/05/2023 23:41</td>
+                    <td>0x77F444f13D1f77ed491C12a8217b2A56fBDcAc1C</td>
+                    <td>0xf3d3dBbF9494bd13239b56CaAcFA0354f23cA6c9</td>
                   </tr>
                   <tr>
                     <td class="Txn-link">0xb2f6eb28270f23cf4a3...</td>
-                    <td>xxx</td>
-                    <td>xxx</td>
-                    <td>xxx</td>
-                    <td>xxx</td>
+                    <td>2.67 ETH</td>
+                    <td>08/05/2023 23:41</td>
+                    <td>0x77F444f13D1f77ed491C12a8217b2A56fBDcAc1C</td>
+                    <td>0xf3d3dBbF9494bd13239b56CaAcFA0354f23cA6c9</td>
                   </tr>
                   <tr>
                     <td class="Txn-link">0xb2f6eb28270f23cf4a3...</td>
-                    <td>xxx</td>
-                    <td>xxx</td>
-                    <td>xxx</td>
-                    <td>xxx</td>
+                    <td>2.67 ETH</td>
+                    <td>08/05/2023 23:41</td>
+                    <td>0x77F444f13D1f77ed491C12a8217b2A56fBDcAc1C</td>
+                    <td>0xf3d3dBbF9494bd13239b56CaAcFA0354f23cA6c9</td>
                   </tr>
               </table>
         </div>
@@ -390,8 +420,8 @@
                 <span>0xFaEba61EE40C2c945DDB021435e4Bbfaf4b009Ea</span><br>
                 <span>0xc8CeEc4FAE172709A202431BD3BcaB1618F08665</span><br>
                 <span>0x77F444f13D1f77ed491C12a8217b2A56fBDcAc1C</span><br>
-                <span>Test1</span><br>
-                <span>Test2</span><br>  
+                <span>0xf3d3dBbF9494bd13239b56CaAcFA0354f23cA6c9</span><br>
+                <span>0xdF321cAF1f224C353243719a552417CF9ECCF0F9</span><br>  
             </div>
             <div class="assign-info">
                 <input type="text" placeholder="Target Address:"><br>
