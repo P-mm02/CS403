@@ -17,24 +17,24 @@ fetch('buyData.json')
     })
 
 function appenData(data){
-    var mainContainer = document.getElementById("BuyWindowPage2")  
-    var spanTime = document.createElement("span")
-    spanTime.innerHTML = "Registeration Time: <br>" + data[0].regisTime
-    mainContainer.appendChild(spanTime)
+    var mainContainer2 = document.getElementById("BuyWindowPage2")  
+    var spanTime2 = document.createElement("span")
+    spanTime2.innerHTML = "Registeration Time: <br>" + data[0].regisTime
+    mainContainer2.appendChild(spanTime2)
 
-    var spanName = document.createElement("span")
-    spanName.innerHTML = "Name: <br>" + data[0].name    
-    mainContainer.appendChild(spanName)
+    var spanName2 = document.createElement("span")
+    spanName2.innerHTML = "Name: <br>" + data[0].name    
+    mainContainer2.appendChild(spanName2)
 
-    var spanGameName = document.createElement("span")
-    spanGameName.innerHTML = "Game: <br>" + data[0].gameName    
-    mainContainer.appendChild(spanGameName)
+    var spanGameName2 = document.createElement("span")
+    spanGameName2.innerHTML = "Game: <br>" + data[0].gameName    
+    mainContainer2.appendChild(spanGameName2)
     
-    var spanPrice = document.createElement("span")
-    spanPrice.innerHTML = "Price: <br>" + data[0].price    
-    mainContainer.appendChild(spanPrice)
+    var spanPrice2 = document.createElement("span")
+    spanPrice2.innerHTML = "Price: <br>" + data[0].price    
+    mainContainer2.appendChild(spanPrice2)
 
-    var spanAddress = document.createElement("span")
-    spanAddress.innerHTML = "Address: <br>" + data[0].address    
-    mainContainer.appendChild(spanAddress)
+    var spanAddress2 = document.createElement("span")
+    spanAddress2.innerHTML = "Address: <br>" + data[0].address    
+    mainContainer2.appendChild(spanAddress2)
 }
