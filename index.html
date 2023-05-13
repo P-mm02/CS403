@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="mainStyle.css">
     <script src="https://kit.fontawesome.com/b5f98614f0.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="homeStyle.css">    
+    <link rel="stylesheet" href="homeStyle.css">
+        
     
 </head>
 <body>
@@ -133,7 +134,7 @@
                         <div class="info-box">
                             <span class="date">xxxxxxxxxxx <br> (Registeration Time)</span>
                             <span class="price">999 ETH <br> (Price)</span>
-                            <button class="buy" onclick="BuyWindow2()">Buy</button>
+                            <button class="buy" onclick="BuyWindow1()">Buy</button>
                         </div>
                     </div>
                     <div class="item-box">
@@ -141,7 +142,7 @@
                         <div class="info-box">
                             <span class="date">xxxxxxxxxxx <br> (Registeration Time)</span>
                             <span class="price">999 ETH <br> (Price)</span>
-                            <button class="buy" onclick="BuyWindow2()">Buy</button>
+                            <button class="buy" onclick="BuyWindow1()">Buy</button>
                         </div>
                     </div> 
                 <button class="showmore" >Show more &#187;</button>            
@@ -150,20 +151,17 @@
             <script src="events.js" defer></script>
              
         </section>
-        <div class="buy-window" id="OpenBuyWindow2">
-            <div class="buy-window-img">
+        <div class="buy-window1" id="BuyWindowPage1">
+            <link rel="stylesheet" href="buy-window1.css">
+            <div class="buy-window1-img">
                 <img src="/image/item list test/01.webp" alt="">
                 <img src="/image/item list test/01.webp" alt="">
             </div>
-            <span>Registeration Time <br>02/05/2023 23.49</span>
-            <span>Name: <br> Poomtawee</span>
-            <span>Game: <br> Axie</span>
-            <span>Price: <br>5.24 ETH</span>
-            <span>Address: <br>0xdF321cAF1f224C353243719a552417CF9ECCF0F9</span>
-            <button>Buy</button>
-            <button onclick="CloseBuyWindow2()">Close</button>
-            <script src="buyScript.js" defer></script>
+            <button id="buyButton1">Buy</button>
+            <button id="closeButton1" onclick="CloseBuyWindow1()" >Close</button>
+            <script src="buyScriptPage1.js" defer></script>            
         </div>
+        
     </div>
 
     <div class="page" data-page="2">
@@ -176,47 +174,47 @@
             <table>
                 <tr>
                     <td>
-                        <img src="/image/buy list test/01.webp" alt="" onclick="BuyWindow()">
+                        <img src="/image/buy list test/01.webp" alt="" onclick="BuyWindow2()">
                     </td>
                     <td>
-                        <img src="/image/buy list test/02.webp" alt="" onclick="BuyWindow()">
+                        <img src="/image/buy list test/02.webp" alt="" onclick="BuyWindow2()">
                     </td>
                     <td>
-                        <img src="/image/buy list test/11.jpg" alt="" onclick="BuyWindow()">
+                        <img src="/image/buy list test/11.jpg" alt="" onclick="BuyWindow2()">
                     </td>
                     <td>
-                        <img src="/image/buy list test/03.jpg" alt="" onclick="BuyWindow()">
+                        <img src="/image/buy list test/03.jpg" alt="" onclick="BuyWindow2()">
                     </td>                    
                 </tr>
                 <tr>
                     <td>
-                        <img src="/image/buy list test/04.webp" alt="" onclick="BuyWindow()">
+                        <img src="/image/buy list test/04.webp" alt="" onclick="BuyWindow2()">
                     </td>
                     <td>
-                        <img src="/image/buy list test/05.jpg" alt="" onclick="BuyWindow()">
+                        <img src="/image/buy list test/05.jpg" alt="" onclick="BuyWindow2()">
                     </td>
                     <td>
-                        <img src="/image/buy list test/06.jpg" alt="" onclick="BuyWindow()">
+                        <img src="/image/buy list test/06.jpg" alt="" onclick="BuyWindow2()">
                     </td> 
                     <td>
-                        <img src="/image/buy list test/07.jpg" alt="" onclick="BuyWindow()">
+                        <img src="/image/buy list test/07.jpg" alt="" onclick="BuyWindow2()">
                     </td>                   
                 </tr>
                 <tr>
                     <td>
-                        <img src="/image/buy list test/08.jpg" alt="" onclick="BuyWindow()">
+                        <img src="/image/buy list test/08.jpg" alt="" onclick="BuyWindow2()">
                     </td>
                     <td>
-                        <img src="/image/buy list test/09.jpg" alt="" onclick="BuyWindow()">
+                        <img src="/image/buy list test/09.jpg" alt="" onclick="BuyWindow2()">
                     </td>
                     <td>
-                        <img src="/image/buy list test/10.png" alt="" onclick="BuyWindow()">
+                        <img src="/image/buy list test/10.png" alt="" onclick="BuyWindow2()">
                     </td> 
                     <td>
-                        <img src="/image/buy list test/12.webp" alt="" onclick="BuyWindow()">
+                        <img src="/image/buy list test/12.webp" alt="" onclick="BuyWindow2()">
                     </td>                   
-                </tr>
-            </table>                    
+                </tr>                
+            </table>                                
             <div class="box-tab">
                 <span>1</span>
                 <span>2</span>
@@ -225,20 +223,21 @@
                 <span>5</span>
                 <span>...</span>
             </div>
-            <div class="buy-window" id="OpenBuyWindow">
-                <div class="buy-window-img">
+            <div class="buy-window2" id="BuyWindowPage2">
+                <link rel="stylesheet" href="buy-window2.css">
+                <div class="buy-window2-img">
                     <img src="/image/item list test/01.webp" alt="">
                     <img src="/image/item list test/01.webp" alt="">
                 </div>
-                <span>Registeration Time <br>02/05/2023 23.49</span>
+                <!-- <span>Registeration Time <br>02/05/2023 23.49</span>
                 <span>Name: <br> Poomtawee</span>
                 <span>Game: <br> Axie</span>
                 <span>Price: <br>5.24 ETH</span>
-                <span>Address: <br>0xdF321cAF1f224C353243719a552417CF9ECCF0F9</span>
-                <button>Buy</button>
-                <button onclick="CloseBuyWindow()">Close</button>
-            
-            </div>        
+                <span>Address: <br>0xdF321cAF1f224C353243719a552417CF9ECCF0F9</span> -->
+                <button id="buyButton2">Buy</button>
+                <button id="closeButton2" onclick="CloseBuyWindow2()" >Close</button>
+                <script src="buyScriptPage2.js"></script>               
+            </div>                   
         </div>
         <div class="sell-page" id="SwitchSellPage">
             <div class="contain-image"> 
@@ -297,9 +296,7 @@
                 </div>
             </div>
             <button class="submit-sell">Submit</button>
-        </div>
-                        
-        <script src="buyScript.js"></script>           
+        </div>                      
         <script src="buy-sellScript.js"></script>        
     </div>
 
