@@ -2,7 +2,7 @@ function BuyWindow21(){
     BuyWindowPage2.style.left = '30vw'
     BuyWindowPage2.style.visibility = 'visible'
 
-    fetch('buyData.json')
+    fetch('itemData.json')
     .then(function(response){
         return response.json()
     })
@@ -46,7 +46,7 @@ function BuyWindow22(){
     BuyWindowPage2.style.left = '30vw'
     BuyWindowPage2.style.visibility = 'visible'
 
-    fetch('buyData.json')
+    fetch('itemData.json')
     .then(function(response){
         return response.json()
     })
@@ -87,7 +87,7 @@ function BuyWindow22(){
     }
 }
 
-fetch('buyData.json')
+fetch('itemData.json')
     .then(function(response){
         return response.json()
     })

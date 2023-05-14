@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/b5f98614f0.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="homeStyle.css">
-        
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>   
     
 </head>
 <body>
@@ -274,25 +274,26 @@
             
             <div class="contain-text">            
                 <div class="text-box">                               
-                    <input type="text" placeholder="Name:" >                
+                    <input type="text" placeholder="Name:" id="sellName">                
                 </div><br>
                 <div class="text-box">                               
-                    <input type="text" placeholder="Game:" >                
+                    <input type="text" placeholder="Game:" id="sellGameName">                
                 </div><br>
                 <div class="text-box">                               
-                    <input type="text" placeholder="Price:" >                
+                    <input type="text" placeholder="Price:" id="sellPrice">                
                 </div><br>
                 <div class="text-box">                               
-                    <input type="text" placeholder="ID:" >                
+                    <input type="text" placeholder="ID:" id="sellId">                
                 </div><br>
                 <div class="text-box">                               
-                    <input type="text" placeholder="Password:" >                
+                    <input type="text" placeholder="Password:" id="sellPassword">                
                 </div><br>
                 <div class="text-box">                               
-                    <input type="text" placeholder="E-mail:" >                
+                    <input type="text" placeholder="E-mail:" id="sellEmail">                
                 </div>
             </div>
-            <button class="submit-sell">Submit</button>
+            <button class="submit-sell" id="submitSell" onclick="submitSellData()">Submit</button>
+            <script src="sellScript.js"></script>
         </div>                      
         <script src="buy-sellScript.js"></script>        
     </div>    
