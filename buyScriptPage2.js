@@ -37,7 +37,7 @@ function BuyWindow2(){
     }
 }
 function CloseBuyWindow2(){
-    BuyWindowPage2.style.visibility = 'hidden'
+    BuyWindowPage2.style.visibility = 'hidden'    
 }
 
 
