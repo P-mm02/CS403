@@ -61,14 +61,14 @@ function appenData(data){
     datePage11.innerHTML = "Registeration Time: <br>" + data[0].regisTime
    
     const pricePage11 = document.getElementById("pricePage11")
-    pricePage11.innerHTML = data[0].price    
+    pricePage11.innerHTML = "Price: <br>" + data[0].price    
 
     var mainContainer2 = document.getElementById("datePage12")
     const datePage12 = document.getElementById("datePage12")
     datePage12.innerHTML = "Registeration Time: <br>" + data[1].regisTime
     
     const pricePage12 = document.getElementById("pricePage12")
-    pricePage12.innerHTML = data[1].price
+    pricePage12.innerHTML = "Price: <br>" + data[1].price
 
     mainContainer1.appendChild(datePage11)
     mainContainer2.appendChild(datePage12)
